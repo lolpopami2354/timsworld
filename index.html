@@ -40,15 +40,24 @@
 </head>
 <body>
   <center>
-  <h1>🛸 Welcome to the Sci-Fi Game Portal 🛸</h1>
+  <h1>🛸 Welcome to the Sci-Fi Game Portal 🛸 TIM</h1>
   <p>Lunching tims world</p>
   <button onclick="launchGame()">Launch Game</button>
+  <button onclick="launchGame2()">open VN</button>
   <iframe id="gameFrame" src=""></iframe>
   <p> </p>
   <hr>
   <p> </p>
   </center>
   <script>
+
+    function launchGame2() {
+      const gameURL = "https://i-ready.com.bg.geek.nz/"; // Replace with your actual game URL
+      const frame = document.getElementById("gameFrame");
+      frame.src = gameURL;
+      frame.style.display = "block";
+    }
+    
     function launchGame() {
       const gameURL = "https://daniezonmc.github.io/1.20/"; // Replace with your actual game URL
       const frame = document.getElementById("gameFrame");
